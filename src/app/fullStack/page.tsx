@@ -49,9 +49,12 @@ const projects = [
   },
 ];
 
+import LoadingWrapper from '../component/LoadingWrapper';
+
 export default function FullStackPage() {
   return (
-    <div className="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen pt-20">
+    <LoadingWrapper delay={1500}>
+      <div className="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen pt-20">
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-64 h-64 bg-indigo-500 rounded-full blur-3xl animate-pulse" />
@@ -126,6 +129,7 @@ export default function FullStackPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </LoadingWrapper>
   );
 }

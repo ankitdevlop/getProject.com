@@ -1,6 +1,9 @@
+import LoadingWrapper from '../component/LoadingWrapper';
+
 export default function AIMLPage() {
   return (
-    <div className="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen pt-20">
+    <LoadingWrapper delay={1500}>
+      <div className="bg-gradient-to-b from-black via-gray-900 to-black min-h-screen pt-20">
       {/* Background decorations */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-64 h-64 bg-pink-500 rounded-full blur-3xl animate-pulse" />
@@ -100,6 +103,7 @@ export default function AIMLPage() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </LoadingWrapper>
   );
 }

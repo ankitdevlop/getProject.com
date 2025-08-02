@@ -2,16 +2,27 @@
 'use client';
 import Link from "next/link";
 import { useState } from "react";
+import SectionLoader from "./component/SectionLoader";
 
 
 export default function Home() {
   return (
     <div>
-      <SectionOne />
-      <SectionTwo />
-      <HowItWorks/>
-      <WhyChooseUs />
-      <ContactSection/>
+      <SectionLoader delay={0}>
+        <SectionOne />
+      </SectionLoader>
+      <SectionLoader delay={300}>
+        <SectionTwo />
+      </SectionLoader>
+      <SectionLoader delay={600}>
+        <HowItWorks/>
+      </SectionLoader>
+      <SectionLoader delay={900}>
+        <WhyChooseUs />
+      </SectionLoader>
+      <SectionLoader delay={1200}>
+        <ContactSection/>
+      </SectionLoader>
     </div>
   );
 }
