@@ -130,7 +130,7 @@ export function Header() {
 
 export function SectionOne() {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center py-20 p-4 sm:p-8 text-white overflow-hidden">
+    <div className="relative min-h-screen flex flex-col items-center justify-center py-29 p-4 sm:p-8 text-white overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover -z-10"
         src="/videos/intoVideo.mp4"
