@@ -232,31 +232,41 @@ export function SectionTwo() {
           {[
             {
               name: "Team of GetProject",
-              role: "UI / Frontend Developer",
+              role: "Custom Project Requests",
               image: "/images/uidev.jpg",
-              text: "We specialize in creating stunning, responsive user interfaces using React.js, Next.js, and Tailwind CSS. Our designs focus on user experience and modern aesthetics.",
-              links: "/webDev",
+              text: "Have a vision that's unlike any other? We're here to transform your most specific and unconventional coding concepts into reality.\n\nNo idea is too unique; share your precise requirements, and watch us bring it to life, fully explained.",
+              links: "/webDev", 
               gradient: "from-blue-600 to-cyan-600",
               icon: "🎨"
             },
             {
-              name: "Team of GetProject",
-              role: "Full Stack Developer",
+              name: "Team of GetProject", 
+              role: "Custom Full-Stack Web Solutions",
               image: "/images/fullstack.jpg",
-              text: "From database design to API development, we build complete web applications using MERN stack, ensuring scalability and performance.",
+              text: `Bring your web application ideas to life! We develop custom, end-to-end full-stack projects – from engaging user interfaces to robust backend systems.\n\nOur Solutions Include:\n\n• Dynamic E-commerce Portals\nOnline stores with product catalogs, secure payment gateways, and user authentication.\n\n• Interactive Portfolio & Blogging Platforms\nPersonalized websites to showcase projects with content management.\n\n• Real-time Collaboration Tools\nWeb applications with live chat and shared document editing.\n\n• Custom Admin Dashboards\nInternal tools for data tracking and user management.\n\n• Educational Web Apps\nInteractive learning platforms and course management systems.\n\n• Social Networking Prototypes\nPlatforms with user profiles and social features.`,
               links: "/fullStack",
-              gradient: "from-indigo-600 to-purple-600",
+              gradient: "from-indigo-600 to-purple-600", 
               icon: "⚡"
             },
             {
               name: "Team of GetProject",
-              role: "AI / ML Engineer",
-              image: "/images/ai.jpg",
-              text: "We develop intelligent solutions using Python, TensorFlow, and PyTorch. From data analysis to machine learning models, we bring AI to life.",
+              role: "Intelligent AI Solutions for Your Vision",
+              image: "/images/ai.jpg", 
+              text: `Harness the power of AI with our custom solutions:\n\n• Custom Chatbots & Virtual Assistants\nConversational AI for Q&A and task automation\n\n• Image Recognition Systems\nAI models for object detection and facial recognition\n\n• Natural Language Processing Tools\nText analysis, sentiment analysis, and language translation\n\n• Recommendation Engines\nAI systems for personalized content suggestions\n\n• Predictive Analytics Tools\nData-driven forecasting and pattern recognition\n\n• Automated Analysis Tools\nAI-powered data processing and insights`,
               links: "/aiMl",
               gradient: "from-pink-600 to-rose-600",
               icon: "🤖"
-            }
+            },
+          {
+  name: "Team of GetProject",
+  role: "End-to-End React Native App Development",
+  image: "/images/appdev.jpg",
+  text: `Build powerful mobile apps with our full-stack solutions:\n\n• Cross-Platform Mobile Apps\nSingle codebase for iOS and Android using React Native\n\n• UI/UX Design Integration\nSeamless, intuitive, and responsive interfaces\n\n• API & Backend Integration\nSecure connections with custom or third-party APIs\n\n• Real-time Features\nLive chat, notifications, and syncing using WebSockets or Firebase\n\n• Scalable Backend Systems\nNode.js, Express, and cloud solutions for robust architecture\n\n• App Store Deployment\nAssistance with publishing to Play Store & App Store`,
+  links: "/reactNative",
+  gradient: "from-blue-600 to-cyan-600",
+  icon: "📱"
+}
+
           ].map((testimonial, index) => (
             <Link key={index} href={testimonial.links} className="group cursor-pointer">
               <div className="relative h-full transform transition-all duration-500 hover:-translate-y-4 hover:scale-105">
@@ -285,7 +295,7 @@ export function SectionTwo() {
                     <h3 className={`text-xl font-bold bg-gradient-to-r ${testimonial.gradient} bg-clip-text text-transparent group-hover:scale-105 transition-transform duration-300`}>
                       {testimonial.role}
                     </h3>
-                    <p className="text-gray-300 leading-relaxed text-sm group-hover:text-white transition-colors duration-300">
+                    <p className="text-gray-300 leading-relaxed text-md group-hover:text-white transition-colors duration-300 whitespace-pre-line">
                       {testimonial.text}
                     </p>
                     <div className="flex items-center justify-between pt-4 border-t border-gray-700/50">
